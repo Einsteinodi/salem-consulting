@@ -1,0 +1,157 @@
+body{
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	text-align: center;
+	font-family:"Open Sans",Arial,sans-serif;
+
+}
+
+header{
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0 0 1px black;
+
+}
+
+
+
+
+
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    header li{
+        font-size: 0.5em;
+        padding: 0;
+        display: flex;
+    }
+    .container{
+    	font-size: 0.5em;
+    	padding: 0;
+    }
+}   
+
+
+header li{
+	display: inline;
+	padding-left: 45px;
+
+}
+
+li a{
+	color: #00000099;
+	text-decoration: none;
+	padding: 13px;
+	transition: .3s ease;
+	list-style: none;
+
+}
+
+header li a:hover{
+	color: #bababa;
+}
+
+
+.active{
+	color: #2AA5F3;
+}
+
+
+header li img{
+	width: 10rem;
+	float: left;
+	margin-top: -20px;
+
+}
+
+
+
+.container{
+	display: flex;
+	width: 100%;
+	height: 550px;
+    justify-content: center;
+    overflow: auto;
+
+}
+
+.container h1{
+    font-size: 50px;
+    margin-top: 200px;
+    color: #00000099;
+}
+
+.container p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #00000099;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #2AA5F3;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background:#2AA5F3; 
+    height:100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+a{
+	color:#bababa;
+	text-decoration: none;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+
+button:hover span{
+    border:none;
+}
+
+
+
+footer{
+    text-align: center;
+    cursor: pointer;
+    border: 20px solid #222;
+    background-color: #222;
+    
+}
+
+
+
+
+
+
+
+
